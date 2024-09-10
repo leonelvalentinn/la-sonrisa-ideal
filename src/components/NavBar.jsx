@@ -47,7 +47,7 @@ export const NavBar = ({ Function }) => {
               <a href='tel:4441340656' className='block py-2 px-3 text-gray-900 transition rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary lg:p-0 lg:text-xl'>Contacto</a>
             </li>
             <li>
-              <a href='tel:4441992010' className='block py-2 px-3 text-white transition rounded bg-primaryBlue hover:scale-105 lg:py-2 lg:px-4 lg:text-xl'>Urgencias 24/7</a>
+              <a href='tel:4441992010' className='block py-2 px-3 text-white transition text-nowrap rounded bg-primaryBlue hover:scale-105 lg:py-2 lg:px-4 lg:text-xl'>Urgencias 24/7</a>
             </li>
           </ul>
         </div>
