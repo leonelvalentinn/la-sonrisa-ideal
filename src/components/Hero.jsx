@@ -1,5 +1,5 @@
 import hero from '../assets/hero-mov.webp'
-import heroDes from '../assets/hero-des.webp'
+import heroDes from '/hero-des.webp'
 // eslint-disable-next-line react/prop-types
 export const Hero = ({ divRef }) => {
   return (
@@ -14,6 +14,7 @@ export const Hero = ({ divRef }) => {
       />
       <img
         src={heroDes}
+        fetchpriority='high'
         alt='Foto de sonrisa perfecta'
         className='w-full h-full object-cover hidden md:block'
         loading='eager'
