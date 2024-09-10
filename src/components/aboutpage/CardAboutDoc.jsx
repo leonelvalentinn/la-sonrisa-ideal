@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import Jesus from '../../assets/photo_doc.webp'
-import Will from '../../assets/photo_jesus.webp'
 
 // eslint-disable-next-line react/prop-types
 export const CardAboutDoc = () => {
@@ -10,7 +8,7 @@ export const CardAboutDoc = () => {
     {
       id: 1,
       name: 'C.D.E.O. Will Gallegos Gómez',
-      imgSrc: Will,
+      imgSrc: '',
       imgAlt: 'Foto de perfil del C.D.E.O. Will Gallegos Gómez',
       reverse: true,
       visible: visibleWill,
@@ -38,7 +36,7 @@ export const CardAboutDoc = () => {
     {
       id: 2,
       name: 'Dr. Jesus Barajas',
-      imgSrc: Jesus,
+      imgSrc: '',
       imgAlt: 'Foto de perfil del Dr. Jesus Barajas',
       reverse: false,
       visible: visibleJesus,

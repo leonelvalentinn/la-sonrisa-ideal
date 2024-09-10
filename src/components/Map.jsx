@@ -5,7 +5,7 @@ import { Phone } from './Phone'
 export const Map = ({ divRef }) => {
   return (
     <div className='px-4 mt-10 md:flex md:justify-center md:items-center md:w-full' id='location' ref={divRef}>
-      <iframe title='Mapa' className='w-full min-h-[400px] rounded-xl md:max-w-[650px]' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923.8745495347576!2d-101.00310427154453!3d22.14510029873213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a991d83a7a339%3A0x226db773d07a8611!2sLa%20sonrisa%20ideal!5e0!3m2!1ses-419!2smx!4v1725986277748!5m2!1ses-419!2smx' style={{ border: 0 }} allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade' />
+      <iframe title='Mapa' className='w-full min-h-[400px] rounded-xl md:max-w-[650px]' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923.8745495347576!2d-101.00310427154453!3d22.14510029873213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a991d83a7a339%3A0x226db773d07a8611!2sLa%20sonrisa%20ideal!5e0!3m2!1ses-419!2smx!4v1725986277748!5m2!1ses-419!2smx' style={{ border: 0 }} allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade' />
       <div className='container-map rounded-xl py-7 px-4 my-5 text-white text-center flex justify-center items-center flex-col bg-gradient-to-tr from-primaryBlue to-blue-600 md:shadow-gray-800 md:shadow-[-19px_3px_22px_-11px] md:h-[600px] md:max-w-[500px] md:p-8'>
         <h2 className=' text-2xl mb-4 font-semibold'>Contáctanos</h2>
         <p className=' mb-6 font-semibold'>¿Tienes alguna necesidad dental en especial? Te podemos ayudar. Déjanos tus datos y nuestro equipo se pondrá en contacto contigo lo más pronto posible. 4441340656</p>
