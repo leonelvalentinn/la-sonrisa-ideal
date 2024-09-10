@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.webp'
 import useOnClickOutside from '../hooks/useOnClickOutside'
 
 // eslint-disable-next-line react/prop-types
