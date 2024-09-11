@@ -41,10 +41,10 @@ body {
 }
 
 .class-next {
-  right: -18px !important;
+  right: -14px !important;
 }
 .class-prev {
-  left: -18px !important;
+  left: -14px !important;
 }
 @media (min-width: 768px) {
   .button-fixed:hover .tel {
