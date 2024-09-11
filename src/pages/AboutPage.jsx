@@ -6,18 +6,18 @@ import { ButtonFixed } from '../components/ButtonsFixed'
 import { Map } from '../components/Map'
 import { TitleSection } from '../components/TitleSection'
 import { Mission } from '../components/aboutpage/Mission'
-import { Counter } from '../components/Counter'
+import { Counter } from '../components/aboutpage/Counter'
 
 const ADVANTAGES = [
   {
     end: 14,
     label: 'años de experiencia',
-    numberIncrement: 2
+    numberIncrement: 1
   },
   {
     end: 600,
     label: 'clientes felices',
-    numberIncrement: 100
+    numberIncrement: 50
   },
   {
     end: 3,

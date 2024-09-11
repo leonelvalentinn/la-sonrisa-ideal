@@ -1,11 +1,12 @@
-import { useState, useEffect, useRef } from 'react'
-import { CardColor } from './CardColor'
+import { useEffect, useRef, useState } from 'react'
+import { AnimatedCounter } from 'react-animated-counter'
+import { CardColor } from '../CardColor'
 
 export const Counter = ({ end, label, numberIncrement }) => {
-  const [count, setCount] = useState(0)
-  const [animate, setAnimate] = useState(false)
+  // Integer state
+  const [counterValue, setCounterValue] = useState(0)
   const ref = useRef()
-  const speed = 300
+  const speed = 150
 
   useEffect(() => {
     let increment
@@ -14,8 +15,7 @@ export const Counter = ({ end, label, numberIncrement }) => {
       const [entry] = entries
       if (entry.isIntersecting) {
         increment = setInterval(() => {
-          setAnimate(true)
-          setCount((prev) => {
+          setCounterValue((prev) => {
             if (prev < end) {
               return prev + numberIncrement
             } else {
@@ -41,16 +41,12 @@ export const Counter = ({ end, label, numberIncrement }) => {
     }
   }, [end])
 
-  useEffect(() => {
-    setAnimate(true)
-    const timeout = setTimeout(() => setAnimate(false), 300)
-    return () => clearTimeout(timeout)
-  }, [count])
-
   return (
     <CardColor>
-      <span className='flex flex-col justify-center items-center text-white' ref={ref}>
-        <span className={`text-3xl font-semibold leading-5 mb-2 lg:text-4xl lg:mb-0 transition ${animate && 'scale-110 opacity-70'}`}>+{count}</span>
+      <span ref={ref} className='flex flex-col justify-center items-center text-white'>
+        <span className='text-3xl flex gap-1 font-semibold leading-5 mb-2 lg:text-4xl lg:mb-0 transition'>+
+          <AnimatedCounter value={counterValue} includeDecimals={false} color='white' fontSize='40px' incrementColor='#7FD0F5' />
+        </span>
         <span className='text-xs text-nowrap lg:text-base'>{label}</span>
       </span>
     </CardColor>
