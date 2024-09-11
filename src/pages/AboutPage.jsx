@@ -4,26 +4,30 @@ import { useRef } from 'react'
 import about from '../assets/about.webp'
 import { ButtonFixed } from '../components/ButtonsFixed'
 import { Map } from '../components/Map'
-import { CardColor } from '../components/CardColor'
 import { TitleSection } from '../components/TitleSection'
 import { Mission } from '../components/aboutpage/Mission'
+import { Counter } from '../components/Counter'
 
 const ADVANTAGES = [
   {
-    number: '+14',
-    description: 'años de experiencia'
+    end: 14,
+    label: 'años de experiencia',
+    numberIncrement: 2
   },
   {
-    number: '+600',
-    description: 'clientes felices'
+    end: 600,
+    label: 'clientes felices',
+    numberIncrement: 100
   },
   {
-    number: '+3',
-    description: 'promociones activas'
+    end: 3,
+    label: 'promociones activas',
+    numberIncrement: 1
   },
   {
-    number: '+10',
-    description: 'tratamientos'
+    end: 10,
+    label: 'tratamientos',
+    numberIncrement: 1
   }
 ]
 
@@ -51,12 +55,7 @@ export const AboutPage = () => {
           <ul className='mt-4 grid grid-cols-2 gap-4 md:grid-cols-4'>
             {
               ADVANTAGES.map((item, i) => (
-                <CardColor key={i}>
-                  <span className='flex flex-col justify-center items-center text-white'>
-                    <span className='text-3xl font-semibold leading-5 mb-2 lg:text-4xl lg:mb-0'>{item.number}</span>
-                    <span className='text-xs text-nowrap lg:text-base'>{item.description}</span>
-                  </span>
-                </CardColor>
+                <Counter key={i} end={item.end} label={item.label} numberIncrement={item.numberIncrement} />
               ))
             }
           </ul>
