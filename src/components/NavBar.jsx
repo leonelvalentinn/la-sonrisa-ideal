@@ -13,10 +13,10 @@ export const NavBar = ({ Function }) => {
 
   return (
     <header className='w-full flex justify-center items-center flex-col shadow-md'>
-      <nav className='w-full relative px-4 flex justify-between items-center max-w-7xl flex-col'>
-        <div className='w-full flex justify-between items-center my-2'>
+      <nav className='w-full px-4 flex justify-between items-center max-w-7xl flex-col'>
+        <div className='w-full flex justify-between items-center my-2 relative'>
           <a href='/' aria-label='Ir a la página principal' className='w-3/5 max-w-52'>
-            <img className='w-16' src={logo} alt='Logo LuDaDental' width='350' height='123' />
+            <img className='w-16' src={logo} alt='Logo La sonrisa ideal' width='350' height='123' />
           </a>
           <div ref={navbar}>
             <button
@@ -28,7 +28,7 @@ export const NavBar = ({ Function }) => {
               <span aria-hidden className={`w-10 h-1 rounded-lg bg-primary transition ${isOpen ? 'scale-0' : ''}`} />
               <span aria-hidden className={`w-10 h-1 rounded-lg bg-primary transition ${isOpen ? '-rotate-45 -translate-y-3' : ''}`} />
             </button>
-            <ul className={`w-[90%] absolute top-[88px] flex flex-col lg:items-center p-4 z-20 ${isOpen ? 'scale-1 -translate-x-72 translate-y-0' : 'scale-0 -translate-x-36 -translate-y-36'} lg:p-0 font-medium border border-gray-200 rounded-lg bg-gray-200 transition-all duration-300 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white lg:scale-100 lg:static lg:-translate-x-0 lg:translate-y-0 lg:w-fit`}>
+            <ul className={`w-[90%] absolute top-[88px] right-4 flex flex-col origin-top-right lg:items-center p-4 z-20 ${isOpen ? 'scale-1' : 'scale-0'} lg:p-0 font-medium border border-gray-200 rounded-lg bg-gray-200 transition-all duration-300 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white lg:scale-100 lg:static lg:-translate-x-0 lg:translate-y-0 lg:w-fit`}>
               <li>
                 <a href='/' className='block py-2 px-3 text-white bg-primary rounded transition lg:bg-transparent lg:hover:text-primary lg:p-0 lg:text-xl lg:text-secondary' aria-current='page'>Inicio</a>
               </li>
