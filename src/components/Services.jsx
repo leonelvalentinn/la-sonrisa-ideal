@@ -5,7 +5,7 @@ import endodoncia from '../assets/services/endodoncia.webp'
 import cirugia from '../assets/services/cirugia.webp'
 import protesis from '../assets/services/prosthesis.webp'
 import periodoncia from '../assets/services/periodoncia.webp'
-import smile from '../assets/services/smile.webp'
+import smile from '../assets/services/ortopedia.webp'
 
 // eslint-disable-next-line react/prop-types
 export const Services = ({ divRef }) => {
@@ -40,8 +40,8 @@ export const Services = ({ divRef }) => {
     },
     {
       id: 4,
-      title: 'Diseño de Sonrisa',
-      description: 'Atención dental de niños, incluyendo revisión, tratamiento de caries y educación en higiene oral.',
+      title: 'Ortopedia',
+      description: 'La ortopedia dental corrige y guía el crecimiento de huesos y músculos faciales para mejorar la alineación dental.',
       img: smile,
       alt: 'Diseño de Sonrisa'
     },
