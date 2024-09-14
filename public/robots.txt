@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ludadental.com.mx
+Host: https://lasonrisaideal.com
