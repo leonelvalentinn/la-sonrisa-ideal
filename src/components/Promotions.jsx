@@ -2,6 +2,8 @@ import { CardPromo } from './CardPromo'
 import promo from '../assets/promos/treatment.webp'
 import promo1 from '../assets/promos/start-treatment.webp'
 import promo2 from '../assets/promos/caries.webp'
+import promo3 from '../assets/promos/caries-child.webp'
+import promo4 from '../assets/promos/brackets-child.webp'
 import { TitleSection } from './TitleSection'
 
 // eslint-disable-next-line react/prop-types
@@ -18,6 +20,14 @@ export const Promotions = ({ divRef }) => {
     {
       imgSrc: promo2,
       alt: 'Promoción remoción de caries o empastes'
+    },
+    {
+      imgSrc: promo3,
+      alt: 'Promoción remoción de caries para niños'
+    },
+    {
+      imgSrc: promo4,
+      alt: 'Promoción inicio de tratamiento de brackets para niños'
     }
   ]
 
