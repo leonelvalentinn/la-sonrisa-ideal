@@ -12,8 +12,8 @@ export const CardPromo = ({ imgSrc, alt }) => {
           src={imgSrc}
           alt={alt}
           className='w-full rounded-2xl mb-5 border border-tertiary-90'
-          width='1080'
-          height='1080'
+          width='500'
+          height='500'
         />
       </a>
       <a

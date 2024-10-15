@@ -60,7 +60,7 @@ export const Reviews = () => {
   ]
 
   return (
-    <section className='w-full flex justify-center items-center py-10 bg-primaryBlue'>
+    <div className='w-full flex justify-center items-center py-10 bg-primaryBlue'>
       <div className='w-full h-full flex justify-center flex-col items-center max-w-5xl px-4 gap-10'>
         <div className='w-full flex justify-center items-center gap-4 lg:gap-8'>
           <hr className='w-full border-2 border-white rounded-lg max-w-96' />
@@ -79,6 +79,7 @@ export const Reviews = () => {
             pauseOnHover: true,
             pauseOnFocus: true,
             autoplay: true,
+            role: 'complementary',
             classes: {
               prev: 'splide__arrow--prev class-prev',
               next: 'splide__arrow--next class-next'
@@ -87,6 +88,12 @@ export const Reviews = () => {
               767: { perPage: 1 },
               1023: { perPage: 2 }
             }
+          }}
+          onMounted={(splide) => {
+            const slides = splide.Components.Elements.slides
+            slides.forEach(slide => {
+              slide.setAttribute('role', 'none')
+            })
           }}
         >
           {
@@ -102,6 +109,6 @@ export const Reviews = () => {
           }
         </Splide>
       </div>
-    </section>
+    </div>
   )
 }

@@ -23,7 +23,7 @@ const INFO = [
 export const Mission = () => {
   return (
     <section className='w-full flex flex-col justify-center items-center px-4'>
-      <div className='w-full grid gap-6 max-w-6xl rounded-lg p-4 bg-secondaryBlue/30 lg:p-8 lg:gap-10'>
+      <div className='w-full grid gap-6 max-w-6xl rounded-lg p-4 bg-blue-300 lg:p-8 lg:gap-10'>
         {
           INFO.map((item, i) => (
             <article key={i} className='w-full flex flex-col gap-4 md:flex-row md:items-center lg:gap-10'>
